@@ -43,13 +43,6 @@ def get_extensions():
     include_dirs = [extensions_dir]
 
     ext_modules = [
-        extension(
-            "detectron2._C",
-            sources,
-            include_dirs=include_dirs,
-            define_macros=define_macros,
-            extra_compile_args=extra_compile_args,
-        )
     ]
 
     return ext_modules
